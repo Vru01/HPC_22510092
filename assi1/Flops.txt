@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------
+| Parameter                        | Value                              |
+| -------------------------------- | ---------------------------------- |
+| **Clock Speed**                  | 4.5 GHz → `4.5 × 10⁹ Hz`           |
+| **Cores**                        | 4 physical cores                   |
+| **Logical CPUs**                 | 8 (with hyper-threading)           |
+| **Vector Support**               | `avx` (so FLOPI = 8)               |
+| **Instructions per Cycle (IPC)** | Assume **4** (modern CPU estimate) |
+-------------------------------------------------------------------------
+
+FLOPS = Clock Speed × Number of Cores × IPC × FLOPI
+
+FLOPS = 4.5e9 × 4 × 4 × 8
+      = 576,000,000,000 FLOPS
+      = 576 GFLOPS
